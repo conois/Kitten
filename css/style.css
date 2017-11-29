@@ -1,0 +1,70 @@
+/* breakpoints 
+1px - 667px ; gatito pequeño; 
+668-1024; gatito mediano; 
+1025 - 1600; gatito grande
+*/
+*{
+	margin:0;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	height: 780px; 
+	max-height: 780px;
+	outline: 2px solid black; 
+	position: relative;
+	background-image: url(../img/sunny-day.jpg); 
+	background-size: 100%;
+	overflow-y: auto;
+}
+
+.gatito{
+	/*outline: 2px solid red; */
+	position: relative;
+	top: 55%;
+	left: 35%;
+	width: 40%;
+	right: 20%;
+	height: 40%;
+	max-height: 500px;
+	background-image: url(../img/kitten-medium.png); 
+	background-size: contain;
+}
+
+@media screen and (min-width: 1px) and (max-width: 667px) {
+	.container{
+		height: 345px;
+		background-image: url(../img/dawn.png); 
+		background-size: cover;
+	}
+	.gatito{
+		/*outline: 2px solid red;*/
+		top: 70%;
+		height: 20%;
+		min-height: 60px;
+		width: 25%;
+		max-height: 33%;
+		background-image: url(../img/kitten-large.png);
+		background-size: contain;
+	}
+
+}
+
+@media screen and (min-width: 668px) and (max-width: 1024px){
+	.container{
+		height: 400px;
+		background-image: url(../img/night.jpg); 
+	}
+	.gatito{
+		/*outline: 2px solid red;*/
+		top: 20%;
+		width: 50%;
+		max-width:350px;
+		height: 300px;
+		background-image: url(../img/kitten-small.png);
+		background-size: contain;
+	}
+	
+}
+
